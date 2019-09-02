@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aliecake/portfolio.git"
+  },
+  "author": "Lauren Eggers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aliecake/portfolio/issues"
+  },
+  "homepage": "https://github.com/Aliecake/portfolio#readme",
+  "dependencies": {
+    "augmented-ui": "^1.0.0",
+    "nodemon": "^1.19.1"
+  }
+}

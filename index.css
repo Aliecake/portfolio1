@@ -1,0 +1,142 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #ff6e5c;
+  }
+html {
+    height: 100%;
+}
+body {
+    font-size: 16px;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: repeat(5, 1fr);
+    background: url(mntn.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.card-container {
+    text-align: center;
+}
+.card {
+    display: inline-block;
+    color: #72a18a;
+    max-width: 29%;
+    height: 400px;
+    margin-top: 5%;
+    --aug-tr-width: 10%;
+    --aug-r-height: 40%;
+    --aug-t-width: 30%;
+    --aug-b-width: 20%;
+    --aug-border: 5px;
+    --aug-border-bg: #013e4c;
+    --aug-inset: 5px;
+    --aug-inset-bg: #00161b;
+}
+.card-title {
+    color: #ff6e5c;
+    font-weight: 900;
+    margin-top: 29px;
+    margin-left: 12px;
+    font-size: 18px;
+    float: left;
+}
+.lastname {
+    color: #ff6e5c;
+}
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    width:100%;
+    height:70px;
+    --aug-t: 20px;
+    --aug-t-offset: -270px;
+    --aug-t-width: 20%;
+    --aug-border: 5px;
+    --aug-border-bg: linear-gradient(to bottom right,#ff6e5c, #013e4c);
+    --aug-border-fallback-color: #d8aea4;
+    color: #72a18a;
+    --aug-inset: 5px;
+    --aug-inset-bg: #00161b;
+ }
+ .footer p {
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding-bottom: 12px;
+    position:absolute;
+    width:100%;
+    bottom:0;
+    text-align:center;
+ }
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    display: block;
+    --aug-b: 20px;
+    --aug-b-offset: 150px;
+    --aug-b-width: 30%;
+    /* background:linear-gradient(to bottom right, #013e4c, #506e62); */
+    --aug-border: 5px;
+    --aug-border-bg: linear-gradient(to bottom right,#4f6d62, #ff6e5c);
+    --aug-border-fallback-color: #d8aea4;
+    color: #72a18a;
+    --aug-inset: 5px;
+    --aug-inset-bg: #00161b;
+}
+.job-title {
+    float: left;
+    padding-left: 42px;
+    padding-top: 8px;
+}
+.name {
+    padding-right: 15px;
+    padding-top: 8px;
+    float: right;
+}
+.main {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: auto;
+    --aug-tr-width: 10%;
+    --aug-r-height: 40%;
+    --aug-r-offset: 50px;
+    --aug-t-width: 30%;
+    --aug-b-width: 20%;
+    --aug-b-offset: -450px;
+    --aug-border: 10px;
+    --aug-border-bg: #013e4c;
+}
+@media only screen and (min-width: 50px) and (max-width: 490px) {
+    .header {
+        height: 90px;
+    }
+    .name {
+        float: none;
+        padding-top: 0px;
+        padding-left: 48px;
+    }
+}
+@media only screen and (max-width: 795px){
+    .card {
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        max-width: 90%;
+    }
+}
