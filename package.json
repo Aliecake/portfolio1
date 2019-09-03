@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/Aliecake/portfolio/issues"
   },
-  "homepage": "https://github.com/Aliecake/portfolio#readme",
+  "homepage": "https://Aliecake.github.io",
   "dependencies": {
     "augmented-ui": "^1.0.0",
     "nodemon": "^1.19.1"
