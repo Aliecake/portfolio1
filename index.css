@@ -11,12 +11,13 @@ html {
     height: 100%;
 }
 body {
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
     min-height: 100%;
     display: grid;
     grid-template-rows: 1fr auto;
     grid-template-columns: repeat(5, 1fr);
-    background: url(mntn.png) no-repeat center center fixed;
+    background: url(/images/mntn.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -24,13 +25,17 @@ body {
 }
 .card-container {
     text-align: center;
+    font-size: 0px;
 }
 .card {
     display: inline-block;
+    vertical-align: top;
     color: #72a18a;
-    max-width: 29%;
-    height: 400px;
-    margin-top: 5%;
+    font-size: 16px;
+    max-width: 27%;
+    height: 500px;
+    padding: 25px;
+    margin: 9px;
     --aug-tr-width: 10%;
     --aug-r-height: 40%;
     --aug-t-width: 30%;
@@ -47,6 +52,13 @@ body {
     margin-left: 12px;
     font-size: 18px;
     float: left;
+}
+.description {
+    text-align: center;
+    color: #013e4c;
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 100px;
 }
 .lastname {
     color: #ff6e5c;
@@ -76,6 +88,7 @@ body {
     bottom:0;
     text-align:center;
  }
+
 .header {
     position: absolute;
     top: 0;
@@ -93,6 +106,13 @@ body {
     --aug-inset: 5px;
     --aug-inset-bg: #00161b;
 }
+i {
+    padding: 2px;
+}
+img {
+    max-width: 200px;
+    padding: 30px;
+}
 .job-title {
     float: left;
     padding-left: 42px;
@@ -106,9 +126,10 @@ body {
 .main {
     grid-column-start: 1;
     grid-column-end: 6;
+    padding: 50px;
     margin: 0 auto;
     margin-top: 70px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     margin-left: 10px;
     margin-right: 10px;
     height: auto;
@@ -124,6 +145,9 @@ body {
 @media only screen and (min-width: 50px) and (max-width: 490px) {
     .header {
         height: 90px;
+    }
+    .main {
+        margin-top: 100px;
     }
     .name {
         float: none;
