@@ -17,6 +17,7 @@ body {
     display: grid;
     grid-template-rows: 1fr auto;
     grid-template-columns: repeat(5, 1fr);
+    background: #013e4c;
     background: url(/images/mntn.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
